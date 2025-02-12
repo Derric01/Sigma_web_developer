@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Simulator</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            padding: 20px;
+            overflow: hidden;
+        }
+        #output {
+            white-space: pre-line;
+            height: 100vh;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        const statements = [
+            "Initializing system...",
+            "Bypassing firewall...",
+            "Accessing secure database...",
+            "Extracting sensitive information...",
+            "Encrypting data packets...",
+            "Deploying backdoor...",
+            "Covering tracks...",
+            "System hacked successfully!"
+        ];
+
+        let index = 0;
+        function displayNextStatement() {
+            if (index < statements.length) {
+                const outputDiv = document.getElementById("output");
+                outputDiv.innerHTML += `> ${statements[index]}\n`;
+                outputDiv.scrollTop = outputDiv.scrollHeight;
+                index++;
+                setTimeout(displayNextStatement, Math.random() * 2000 + 500);
+            }
+        }
+
+        displayNextStatement();
+    </script>
+</body>
+</html>
