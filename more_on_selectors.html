@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        /* .box:first-child{
+           background-color: red;
+        } */
+        /* .box::first-line{
+            color:blueviolet
+        } */
+         .boxes *{
+            color: blueviolet;
+            border: 2px solid black;
+         }
+         [data-color="primary"]{
+                background-color:red;
+         }
+         .box ::selection{
+                background-color: rgb(18, 170, 81);
+         }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vero, quam recusandae, iusto similique nobis quas, iure magni magnam sed modi hic labore odio adipisci accusamus soluta consequuntur. Obcaecati similique harum vero beatae eum dignissimos accusamus laboriosam quibusdam consequuntur repellendus vitae consequatur, iste quas reprehenderit.</div>
+        <div class="box">Hey i am a box!!</div>
+        <div class="box " data-color="primary">Hey i am a box!!</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /*element selector*/
+        div{
+            background-color: slategrey;
+            color: tomato;
+        }
+        /*class selector*/
+        .red{
+            background-color: royalblue;
+            color: thistle;
+        }
+        /*id selector*/
+        green{
+            background-color: silver;
+            color: honeydew;
+        }
+        /*child selector: it works only when paragraph tag is inside div or the respective tag*/
+        div > p{
+            background-color: white;
+            color: chartreuse;
+        }
+        /*descendent selector*/
+        div p{
+            background-color: yellowgreen;
+            color: brown;
+        }
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+/* pseudo selector */
+
+
+a:visited{
+    color: salmon;
+}
+a:link {
+    color: violet;
+}
+a:active {
+    color: turquoise;
+}
+a:hover{
+    color: violet;
+}
+p:first-child{
+    background-color: thistle;
+    color: tomato;
+}
+    </style>
+</head>
+<body>
+    <div class="red"> I am here to finish this course no matter what</div>
+    <div id="green">
+        i am another div 
+        <p>i am gonna pull this off</p>
+    </div>
+    <summary>
+        <p>we will pull this off!!</p>
+    </summary>
+    <a href="https://www.google.com"> click here </a><br>
+    <a href="https://www.facebook.com"> click here </a>
+    
+</body>
+</html>

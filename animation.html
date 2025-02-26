@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container {
+            background-color: darkcyan;
+            height: 80vh;
+            width: 30vw;
+            position: relative;
+        }
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            animation: derric 3s ease-in-out 1s 1 backwards; /* Apply the correct animation */
+        }
+        
+        @keyframes identifier {
+            from {
+                background-color: red;
+            }
+            to {
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes derric {
+            0% {
+                transform: rotate(100deg);
+            }
+            25% {
+                transform: rotate(200deg);
+            }
+            50% {
+                transform: rotate(220deg);
+            }
+            80% {
+                transform: rotate(300deg);
+            }
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

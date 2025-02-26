@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box {
+            height: 45px;
+            width: 45px;
+            background-color: blueviolet;
+            border: 2px solid black; /* Fixed the spacing issue */
+            /* transform: rotate(0.25turn); */
+            transform: skewY(25deg);
+        }
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black; /* Fixed the spacing issue */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
