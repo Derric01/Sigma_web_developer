@@ -1,0 +1,383 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4c8d6402-d493-4d24-9964-b52acdfa56fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello world\n"
+     ]
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "70657d72-da9c-4fee-aef6-2338fa5af230",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1D Array:\n",
+      "[1 2 3 4 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "array_1d = np.array([1, 2, 3, 4, 5])\n",
+    "print(\"1D Array:\")\n",
+    "print(array_1d)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "6d5f871b-0819-48bf-9eb3-39357fe5a525",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "2D Array:\n",
+      "[[  1   2   3]\n",
+      " [ 56  78  98]\n",
+      " [ 25 879 987]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Creating a 2D array\n",
+    "array_2d = np.array([[1, 2, 3], [56, 78, 98], [25, 879, 987]])\n",
+    "print(\"\\n2D Array:\")\n",
+    "print(array_2d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "7c13ecb0-cdaf-4eb4-932a-91216dee7f3e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Type of array_2d: <class 'numpy.ndarray'>\n",
+      "\n",
+      "3x3 Zero Matrix:\n",
+      "[[0 0 0]\n",
+      " [0 0 0]\n",
+      " [0 0 0]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Checking the type of array_2d\n",
+    "print(\"\\nType of array_2d:\", type(array_2d))\n",
+    "\n",
+    "# Creating a 3x3 array filled with zeros\n",
+    "arr_zeros = np.zeros((3, 3), int)\n",
+    "print(\"\\n3x3 Zero Matrix:\")\n",
+    "print(arr_zeros)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "62638ae7-505d-4ebb-8be8-ea9070885dad",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "3x3 Ones Matrix:\n",
+      "[[1. 1. 1.]\n",
+      " [1. 1. 1.]\n",
+      " [1. 1. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr_ones = np.ones((3, 3), float)\n",
+    "print(\"\\n3x3 Ones Matrix:\")\n",
+    "print(arr_ones)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "b673df08-b12e-4ff3-b9f3-086b8709c13d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "3x3 Identity Matrix:\n",
+      "[[1 0 0]\n",
+      " [0 1 0]\n",
+      " [0 0 1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "identity_matrix = np.identity(3, int)\n",
+    "print(\"\\n3x3 Identity Matrix:\")\n",
+    "print(identity_matrix)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "2cace698-995a-4e71-a715-72b71b5778b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Array using arange (10 to 30 with step 5):\n",
+      "[10 15 20 25]\n"
+     ]
+    }
+   ],
+   "source": [
+    " # Creating an array using np.arange (start, stop, step)\n",
+    "kk = np.arange(10, 30, 5)\n",
+    "print(\"\\nArray using arange (10 to 30 with step 5):\")\n",
+    "print(kk)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "c5e5a70c-7b11-45ce-b90e-c69e53c521bd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Array using linspace (0 to 2 with 9 values):\n",
+      "[0.   0.25 0.5  0.75 1.   1.25 1.5  1.75 2.  ]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Creating an array using np.linspace (start, stop, num)\n",
+    "arr_linspace = np.linspace(0, 2, 9)\n",
+    "print(\"\\nArray using linspace (0 to 2 with 9 values):\")\n",
+    "print(arr_linspace)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "890b17a7-046f-4f9a-bfe1-d55ef7d68407",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Reshaped 3x3 array from 1 to 9:\n",
+      "[[1 2 3]\n",
+      " [4 5 6]\n",
+      " [7 8 9]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Ex:Reshaping an array\n",
+    "reshaped_arr = np.arange(1, 10).reshape(3, 3)\n",
+    "print(\"\\nReshaped 3x3 array from 1 to 9:\")\n",
+    "print(reshaped_arr)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "895d7b1d-fc03-4349-b586-b01c36734d1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "3x3 Random Matrix:\n",
+      "[[0.29951292 0.40862878 0.01442198]\n",
+      " [0.50970128 0.35426063 0.1539898 ]\n",
+      " [0.23715262 0.72127447 0.66586258]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "random_arr = np.random.rand(3, 3)\n",
+    "print(\"\\n3x3 Random Matrix:\")\n",
+    "print(random_arr)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "7f85a718-15c8-4b8d-8bb3-4d3e47409894",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "3x3 Random Integer Matrix:\n",
+      "[[ 7 49 99]\n",
+      " [68 45 43]\n",
+      " [19 14  7]]\n",
+      "\n",
+      "Shape of array_2d: (3, 3)\n",
+      "Size of array_2d: 9\n",
+      "\n",
+      "Transposed 2D Array:\n",
+      "[[  1  56  25]\n",
+      " [  2  78 879]\n",
+      " [  3  98 987]]\n",
+      "\n",
+      "Element-wise Addition: [11 22 33]\n",
+      "Element-wise Multiplication: [10 40 90]\n",
+      "Element-wise Square: [100 400 900]\n",
+      "\n",
+      "Max value in array_2d: 987\n",
+      "Min value in array_2d: 1\n",
+      "\n",
+      "Mean of array_2d: 236.55555555555554\n",
+      "Sum of array_2d: 2129\n",
+      "Standard Deviation of array_2d: 374.558439621053\n",
+      "\n",
+      "Normalized Data:\n",
+      "[0.375 0.    0.75  1.    0.125]\n",
+      "\n",
+      "Standardized Data:\n",
+      "[-0.19955703 -1.19734219  0.79822813  1.46341823 -0.86474714]\n",
+      "\n",
+      "Generated Features:\n",
+      "[[0.38298698 0.86700641 0.31934704]\n",
+      " [0.48058777 0.7211804  0.27903988]\n",
+      " [0.4885765  0.11136238 0.388951  ]\n",
+      " [0.73185212 0.70522056 0.41060869]\n",
+      " [0.28791746 0.02423126 0.51689804]]\n",
+      "\n",
+      "Generated Labels:\n",
+      "[0 1 0 0 1]\n",
+      "\n",
+      "Training Set:\n",
+      "[[0.28791746 0.02423126 0.51689804]\n",
+      " [0.4885765  0.11136238 0.388951  ]\n",
+      " [0.38298698 0.86700641 0.31934704]\n",
+      " [0.73185212 0.70522056 0.41060869]]\n",
+      "\n",
+      "Testing Set:\n",
+      "[[0.48058777 0.7211804  0.27903988]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "random_int_arr = np.random.randint(1, 100, (3, 3))\n",
+    "print(\"\\n3x3 Random Integer Matrix:\")\n",
+    "print(random_int_arr)\n",
+    "\n",
+    "# Example: Finding shape and size of an array\n",
+    "print(\"\\nShape of array_2d:\", array_2d.shape)\n",
+    "print(\"Size of array_2d:\", array_2d.size)\n",
+    "\n",
+    "# Example: Transposing an array\n",
+    "transposed_arr = array_2d.T\n",
+    "print(\"\\nTransposed 2D Array:\")\n",
+    "print(transposed_arr)\n",
+    "\n",
+    "# Example: Basic Mathematical Operations\n",
+    "arr1 = np.array([10, 20, 30])\n",
+    "arr2 = np.array([1, 2, 3])\n",
+    "print(\"\\nElement-wise Addition:\", arr1 + arr2)\n",
+    "print(\"Element-wise Multiplication:\", arr1 * arr2)\n",
+    "print(\"Element-wise Square:\", arr1 ** 2)\n",
+    "\n",
+    "# Example: Finding maximum and minimum values in an array\n",
+    "print(\"\\nMax value in array_2d:\", np.max(array_2d))\n",
+    "print(\"Min value in array_2d:\", np.min(array_2d))\n",
+    "\n",
+    "# Example: Mean, Sum, and Standard Deviation\n",
+    "print(\"\\nMean of array_2d:\", np.mean(array_2d))\n",
+    "print(\"Sum of array_2d:\", np.sum(array_2d))\n",
+    "print(\"Standard Deviation of array_2d:\", np.std(array_2d))\n",
+    "\n",
+    "# AI/ML Data Preprocessing Examples\n",
+    "\n",
+    "# Normalizing an array (scaling values between 0 and 1)\n",
+    "data = np.array([50, 20, 80, 100, 30])\n",
+    "norm_data = (data - np.min(data)) / (np.max(data) - np.min(data))\n",
+    "print(\"\\nNormalized Data:\")\n",
+    "print(norm_data)\n",
+    "\n",
+    "# Standardizing an array (mean = 0, std = 1)\n",
+    "standardized_data = (data - np.mean(data)) / np.std(data)\n",
+    "print(\"\\nStandardized Data:\")\n",
+    "print(standardized_data)\n",
+    "\n",
+    "# Generating a dataset for AI/ML\n",
+    "features = np.random.rand(5, 3)  # 5 samples, 3 features each\n",
+    "labels = np.random.randint(0, 2, 5)  # Binary classification labels\n",
+    "print(\"\\nGenerated Features:\")\n",
+    "print(features)\n",
+    "print(\"\\nGenerated Labels:\")\n",
+    "print(labels)\n",
+    "\n",
+    "# Splitting a dataset into training and testing sets\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42)\n",
+    "print(\"\\nTraining Set:\")\n",
+    "print(X_train)\n",
+    "print(\"\\nTesting Set:\")\n",
+    "print(X_test)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-ai-2024.04-py310",
+   "language": "python",
+   "name": "conda-env-anaconda-ai-2024.04-py310-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
