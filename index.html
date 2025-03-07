@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a test page">
-    <title>Document</title>
+    <title>Chaining Requests</title>
 </head>
 <body>
-    <h1>Derric</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam minima obcaecati ut possimus magni nihil, eum iure laudantium aspernatur. Velit quis voluptates a inventore similique nostrum. Aliquam dicta corrupti a at dolor molestiae impedit dolores tenetur perspiciatis. Deleniti quaerat earum doloremque eius dolorum odit possimus?</p>
+    <h1>Check Console for Chained Requests</h1>
+    <button onclick="chainRequests()">Start Chaining</button>
+
+    <script>
+        async function chainRequests() {
+            try {
+                // Step 1: Send a PUT request (Add Data)
+                let putResponse = await fetch('http://localhost:3000/', { 
+                    method: "PUT",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: "Hello from PUT request!" }) 
+                });
+                let putData = await putResponse.json();
+                console.log("✅ PUT Response:", putData);
+
+                // Step 2: Send a GET request (Retrieve Data)
+                let getResponse = await fetch('http://localhost:3000/', { method: "GET" });
+                let getData = await getResponse.json();
+                console.log("✅ GET Response:", getData);
+
+                // Step 3: Send a DELETE request (Remove Data)
+                let deleteResponse = await fetch('http://localhost:3000/', { method: "DELETE" });
+                let deleteData = await deleteResponse.json();
+                console.log("✅ DELETE Response:", deleteData);
+
+            } catch (error) {
+                console.error("❌ Error:", error);
+            }
+        }
+    </script>
 </body>
 </html>
