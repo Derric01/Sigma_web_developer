@@ -70,7 +70,7 @@
 // //         const usersCollection = db.collection("users");
 
 // //         // Insert multiple users
-// //         const users = [
+//       const users = [
 // //             { name: "Alice", email: "alice@example.com", age: 30 },
 // //             { name: "Bob", email: "bob@example.com", age: 22 },
 // //             { name: "Charlie", email: "charlie@example.com", age: 28 }
