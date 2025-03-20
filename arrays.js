@@ -6,8 +6,7 @@
 // arr.push("2dfdf")
 // console.log(arr)
 // arr.pop()//pops last element
-// arr.shift()//pops first element
-// console.log(arr)
+// arr.shift()//pops first elemen console.log(arr)
 // arr.unshift()
 // console.log(arr)
 // arr.sort()
