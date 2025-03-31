@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;           /* Full viewport height */
+    background-color: #20c80a;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#my-btn {
+    font-size: 3em;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#my-btn:hover {
+    background-color: #0056b3;
+}
+
+.mylabels {
+    font-size: 3em;
+    display: block;
+    margin-top: 10px;
+}
