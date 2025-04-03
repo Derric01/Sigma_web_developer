@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp_cover.css">
+</head>
+<body>
+    <form>
+        <h1>Temperature Conversion</h1>
+        <input  type="number"  id="textBox" value=0><br>
+        <input type="radio" id="Tofaren" name="unit">
+        <label for="Tofaren">cel ➡️ farenh</label><br>
+        <input type="radio" id="Tocel" name="unit">
+
+      <label for="Tocel">faren ➡️ cell</label><br>
+      <button type="button" onclick="convert()" >Submit</button>
+      <p id="result"> </p>
+     </form>
+
+<script src="temp_conv.js"></script>
+</body>
+</html>

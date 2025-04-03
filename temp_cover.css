@@ -1,0 +1,41 @@
+body{
+    font-style: arial;
+    background-color: beige;
+}
+h1{
+    color:blue
+}
+form{
+    text-align: center;
+    margin:auto;
+    width:300px;
+    padding: 20px;
+    background-color: rgb(106, 219, 20);
+    border-radius: 5px;
+}
+#textBox{
+    width:50%;
+    text-align:center;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#result{
+    font-size: 1.5em;
+    font-weight: bold;
+}
