@@ -5,7 +5,7 @@ let x = 998.72355234;
  let y = Math.ceil(x);
 let y = Math.trunc(x)
 let g = 34;
-let h = -454
+let h = -4584
 
  console.log(Math.abs(h));
  console.log(Math.sqrt(x))
