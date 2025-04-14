@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-image: url('ryuken.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+    backdrop-filter: blur(4px); /* Apply actual blur */
+    padding: 20px;
+    border-radius: 15px;
+}
