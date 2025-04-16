@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Scientific Calculator</title>
+  <link rel="stylesheet" href="Calculator.css" />
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="tabs">
+      <button class="tab-button" onclick="showTab('basic')">Basic</button>
+      <button class="tab-button" onclick="showTab('scientific')">Scientific</button>
+      <button class="tab-button" onclick="showTab('matrix')">Matrix</button>
+      <button class="tab-button" onclick="showTab('functions')">Functions</button>
+    </div>
+
+    <div class="display" id="display">0</div>
+
+    <!-- BASIC -->
+    <div id="basic" class="tab-content">
+      <div class="buttons">
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('/')">÷</button>
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('*')">×</button>
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('-')">−</button>
+        <button onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="append('+')">+</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="deleteLast()">DEL</button>
+      </div>
+    </div>
+
+    <!-- SCIENTIFIC -->
+    <div id="scientific" class="tab-content hidden">
+      <div class="buttons">
+        <button onclick="append('Math.sin(')">sin</button>
+        <button onclick="append('Math.cos(')">cos</button>
+        <button onclick="append('Math.tan(')">tan</button>
+        <button onclick="append('Math.sqrt(')">√</button>
+        <button onclick="append('Math.PI')">π</button>
+        <button onclick="append('Math.E')">e</button>
+        <button onclick="append('^')">^</button>
+        <button onclick="append('%')">%</button>
+        <button onclick="append('Math.log10(')">log</button>
+        <button onclick="append('Math.log(')">ln</button>
+        <button onclick="append('(')">(</button>
+        <button onclick="append(')')">)</button>
+      </div>
+    </div>
+
+    <!-- MATRIX -->
+    <div id="matrix" class="tab-content hidden">
+      <p>Matrix mode:</p>
+      <textarea id="matrixInputA" placeholder="Matrix A (e.g. [[1,2],[3,4]])"></textarea>
+      <textarea id="matrixInputB" placeholder="Matrix B (optional)"></textarea>
+      <button onclick="matrixOperation('add')">A + B</button>
+      <button onclick="matrixOperation('multiply')">A × B</button>
+      <button onclick="matrixOperation('det')">det(A)</button>
+      <button onclick="matrixOperation('inv')">inv(A)</button>
+    </div>
+
+    <!-- FUNCTIONS -->
+    <div id="functions" class="tab-content hidden">
+      <p>Define a function: f(x) = expression</p>
+      <input id="functionDef" placeholder="e.g. f(x) = x**2 + 2*x + 1" />
+      <input id="functionEval" placeholder="Evaluate at x = 2" />
+      <button onclick="defineFunction()">Define</button>
+      <button onclick="evaluateFunction()">Evaluate</button>
+      <div id="functionOutput"></div>
+    </div>
+
+    <div class="toggle-mode" onclick="toggleMode()">🌗 Toggle Mode</div>
+  </div>
+
+  <script src="math.min.js"></script>
+  <script src="Calculator.js"></script>
+</body>
+</html>
