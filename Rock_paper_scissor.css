@@ -1,0 +1,29 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .choice {
+    background: linear-gradient(to bottom right, #1f2937, #111827);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, background 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+    background: #334155;
+  }
+  

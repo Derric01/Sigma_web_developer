@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Rock_paper_scissor.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+  <div class="glass-card text-center max-w-md w-full">
+    <h1 class="text-4xl font-bold mb-6">Rock ✊ Paper 🖐 Scissors ✌️</h1>
+
+    <div id="choices" class="grid grid-cols-3 gap-4 mb-8">
+      <button class="choice" data-choice="rock">
+        ✊<br><span>Rock</span>
+      </button>
+      <button class="choice" data-choice="paper">
+        🖐<br><span>Paper</span>
+      </button>
+      <button class="choice" data-choice="scissors">
+        ✌️<br><span>Scissors</span>
+      </button>
+    </div>
+
+    <div class="text-lg">
+      <p id="resultText" class="mb-4">Make your move!</p>
+      <p>You: <span id="playerScore">0</span> | Computer: <span id="computerScore">0</span></p>
+    </div>
+  </div>
+
+  <script src="Rock_paper_scissor.js"></script>
+</body>
+</html>
