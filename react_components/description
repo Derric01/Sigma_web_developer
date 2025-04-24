@@ -1,0 +1,33 @@
+# 📦 React Component: Basic Intro
+
+## 📝 Description
+This is a simple React component built as part of an introductory exercise in React. It demonstrates the fundamentals of creating functional components, rendering JSX, and applying basic styling.
+
+## 🧩 Component Features
+- Built using a functional component.
+- Uses JSX to return UI elements.
+- Applies inline or CSS styling.
+- Can be reused and rendered within other components or `App.js`.
+
+## 🛠️ Tech Stack
+- **React** (with `create-react-app` or similar setup)
+- **JavaScript (ES6+)**
+- **CSS** (or inline styles)
+
+## 🚀 How to Use
+
+1. Import the component:
+   ```jsx
+   import MyComponent from './MyComponent';
+   ```
+
+2. Use it in your main `App.js`:
+   ```jsx
+   function App() {
+     return (
+       <div>
+         <MyComponent />
+       </div>
+     );
+   }
+   ```
