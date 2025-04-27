@@ -1,0 +1,60 @@
+/* Counter.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .counter-container {
+    background: #1f2937; /* dark card */
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  
+  .count-display {
+    font-size: 4rem;
+    color: #f9fafb; /* almost white */
+    margin-bottom: 30px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .counter-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .counter-button.decrement {
+    background-color: #ef4444; /* red-500 */
+  }
+  
+  .counter-button.reset {
+    background-color: #6b7280; /* gray-500 */
+  }
+  
+  .counter-button.increment {
+    background-color: #10b981; /* green-500 */
+  }
+  
+  .counter-button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+.counter-button{
+    color: black;
+}  
