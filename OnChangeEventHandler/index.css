@@ -1,0 +1,135 @@
+/* General Background */
+.page-background {
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+  background: linear-gradient(135deg, #fef9f9, #eef2f3);
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 15px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Inputs and Textareas */
+.form-input,
+.form-textarea,
+select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fcfcfc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect */
+.form-input:focus,
+.form-textarea:focus,
+select:focus {
+  background-color: #e8f0fe;
+  border-color: #74ebd5;
+  box-shadow: 0 0 8px rgba(116, 235, 213, 0.8);
+  outline: none;
+}
+
+/* Buttons */
+.submit-button,
+.reset-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+}
+
+.reset-button {
+  background: linear-gradient(135deg, #ff6a6a, #d32f2f);
+  color: #fff;
+}
+
+/* Success Message */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Order Summary */
+.order-summary {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.order-summary h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 25px 20px;
+  }
+}
