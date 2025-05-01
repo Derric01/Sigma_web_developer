@@ -1,0 +1,73 @@
+.color-picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #f0f0f0, #d9e4f5);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.color-picker-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 300px;
+}
+
+.color-picker-card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.color-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  border: 3px solid #ccc;
+}
+
+.hex {
+  font-family: monospace;
+  font-weight: bold;
+  color: #333;
+}
+
+.color-input {
+  margin: 20px 0;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.reset {
+  background-color: #777;
+}
+
+button.reset:hover {
+  background-color: #444;
+}
